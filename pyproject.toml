@@ -121,15 +121,16 @@ toml = "^0.10"
 
 Sphinx = "^3.4"
 black = { version = "*", allow-prereleases = true }
+flake8 = "^3.8"
+flake8-docstrings = "^1.5"
 isort = "^5.6"
 pccc = "^0.4"
 pre-commit = "^2.9"
-pyfakefs = "^4.3"
+pydocstyle = "^5.1"
 pytest = "^6.1"
-pytest-black = "^0.3"
 pytest-cov = "^2.10"
-pytest-flake8 = "^1.0"
-pytest-pydocstyle = "^2.2"
+tox = "^3.21"
+twine = "^3.3"
 
 [tool.poetry.scripts]
 
@@ -142,11 +143,3 @@ chcss = "chcss:main"
 "Repository" = "https://github.com/jeremyagray/chcss"
 
 [tool.pytest.ini_options]
-
-flake8-max-complexity = 20
-flake8-max-line-length = 88
-
-flake8-ignore = [
-    "* E203, W503",
-    "__init__.py F401",
-]
