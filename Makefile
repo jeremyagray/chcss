@@ -1,6 +1,6 @@
 #***********************************************************************
 #
-# Makefile - chore makefile for pccc
+# Makefile - chore makefile for chcss
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
@@ -9,10 +9,10 @@
 #
 #***********************************************************************
 
-.PHONY : build clean dist docs commit lint pip upload upload-test test test-all
+.PHONY : build clean commit dist docs freeze lint pip test test-all upload upload-test
 
 test-all:
-	pytest -vv --black --flake8 --pydocstyle --cov pccc --cov-report term --cov-report html
+	pytest -vv --cov chcss --cov-report term --cov-report html
 
 build :
 	cd docs && make html
@@ -22,7 +22,7 @@ build :
 clean :
 	rm -rf build
 	rm -rf dist
-	rm -rf pccc.egg-info
+	rm -rf chcss.egg-info
 	cd docs && make clean
 
 dist : clean build
@@ -34,13 +34,17 @@ commit :
 	pre-commit run --all-files
 
 lint :
-	pytest --lint-only --black --flake8 --pydocstyle
+	flake8 --exit-zero
+	black --check .
 
 pip :
 	pip install -r requirements.txt
 
+freeze : requirements.txt
+	pip freeze > requirements.txt
+
 test:
-	pytest --cov pccc --cov-report term
+	pytest --cov chcss --cov-report term
 
 upload:
 	python3 -m twine upload --verbose dist/*
