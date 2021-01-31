@@ -31,7 +31,6 @@ integration into a git ``commit-msg`` hook or ``pre-commit``.
 Roadmap
 ~~~~~~~
 
-* Implement ``class`` identifier parser.
 * Implement parser field definitions in configuration file.
 * Implement ignorable ``class`` identifiers in configuration file
   (i.e. Bootstrap).
@@ -41,7 +40,8 @@ Roadmap
 * Use information from HTML DOM and ``class`` identifier parser to raise
   exceptions and provide useful error messages.
 * Implement hierarchical ``id`` identifier parsing (maybe; target: post 1.0.0).
-* Implement testing, build, documentation, and CI (complete: 0.0.2).
+* Implement testing, build, documentation, and CI (completed in 0.0.2).
+* Implement ``class`` identifier parser (completed in 0.0.3).
 
 Installation
 ~~~~~~~~~~~~

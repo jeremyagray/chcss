@@ -5,4 +5,5 @@
 """``chcss``:  a CSS naming hierarchy enforcer."""
 
 from .config import Config
-from .parser import parser
+from .parser import main
+from .parser import parse_class_name

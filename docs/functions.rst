@@ -9,8 +9,12 @@ Functions
 .. toctree::
    :maxdepth: 2
 
-..
-   chcss.main()
-   -----------
+chcss.main()
+------------
 
-   .. autofunction:: chcss.main
+.. autofunction:: chcss.main
+
+chcss.parse_class_name()
+------------------------
+
+.. autofunction:: chcss.parse_class_name
