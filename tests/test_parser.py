@@ -1,14 +1,20 @@
-#!/usr/bin/env python
+# ******************************************************************************
+#
+# chcss, a CSS naming hierarchy enforcer.
+#
+# Copyright 2021-2024 Jeremy A Gray <gray@flyquackswim.com>.
+#
+# All rights reserved.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# ******************************************************************************
+
 """Parser unit tests."""
 
-import sys
 import types
 
-import pytest
-
-sys.path.insert(0, "/home/gray/src/work/chcss")
-
-import chcss  # noqa: E402
+import chcss
 
 
 def test_parser_interface():

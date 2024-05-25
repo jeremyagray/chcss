@@ -1,10 +1,20 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
+# ******************************************************************************
 #
 # chcss, a CSS naming hierarchy enforcer.
-# Copyright (C) 2021 Jeremy A Gray <jeremy.a.gray@gmail.com>.
+#
+# Copyright 2021-2024 Jeremy A Gray <gray@flyquackswim.com>.
+#
+# All rights reserved.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# ******************************************************************************
+
 """chcss parser functions and classes."""
 
 import pyparsing as pp
+
+from .config import Config
 
 
 def parse_class_name(name):
@@ -71,7 +81,6 @@ def parse_class_name(name):
     element = pp.oneOf(elements)
     modifier = pp.oneOf(modifiers)
 
-    # identifier:: namespace-function((-component)+(-element(-modifier)*)?)?
     identifier = pp.Group(
         namespace
         + "-"
@@ -90,6 +99,7 @@ def parse_class_name(name):
         return False
 
 
-def main(args):
+def main(args=None):
     """Validate the CSS class hierarchy of a file."""
-    pass
+    conf = Config()
+    conf.load(args)
