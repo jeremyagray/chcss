@@ -94,30 +94,30 @@ spell_check = false
 repair = false
 
 types = [
-  "build",
-  "ci",
   "depends",
-  "docs",
+  "doc",
   "feat",
   "fix",
   "perf",
   "refactor",
   "release",
   "style",
-  "test"
+  "test",
 ]
 
 scopes = [
   "config",
-  "parser"
+  "parser",
+  "tooling",
 ]
 
 footers = [
-  "signed-off-by"
+  "github-closes",
+  "signed-off-by",
 ]
 
 required_footers = [
-  "signed-off-by"
+  "signed-off-by",
 ]
 
 [tool.poetry]
