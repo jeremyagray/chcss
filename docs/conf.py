@@ -1,8 +1,16 @@
-"""Sphinx configuration."""
-# SPDX-License-Identifier: GPL-3.0-or-later
+# ******************************************************************************
 #
 # chcss, a CSS naming hierarchy enforcer.
-# Copyright (C) 2021 Jeremy A Gray <jeremy.a.gray@gmail.com>.
+#
+# Copyright 2021-2024 Jeremy A Gray <gray@flyquackswim.com>.
+#
+# All rights reserved.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# ******************************************************************************
+
+"""Sphinx configuration."""
 
 import os
 import sys
@@ -12,7 +20,7 @@ sys.path.insert(0, os.path.abspath(".."))
 # Project information.
 
 author = "Jeremy A Gray"
-copyright = "2021, Jeremy A Gray"
+copyright = "2021-2024, Jeremy A Gray"
 project = "chcss"
 release = "0.0.3"
 

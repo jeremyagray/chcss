@@ -1,5 +1,6 @@
-chcss
------
+=======
+ chcss
+=======
 
 A CSS naming hierarchy enforcer.
 
@@ -11,7 +12,7 @@ A CSS naming hierarchy enforcer.
    :alt: Documentation Status
 
 What is chcss?
-~~~~~~~~~~~~~~
+==============
 
 ``chcss`` is a PyParsing based grammar for parsing and verifying that
 CSS class names are used in the correct hierarchy in HTML files.
@@ -29,7 +30,7 @@ on which element caused the first violation, with the goal being easy
 integration into a git ``commit-msg`` hook or ``pre-commit``.
 
 Roadmap
-~~~~~~~
+=======
 
 * Implement parser field definitions in configuration file.
 * Implement ignorable ``class`` identifiers in configuration file
@@ -44,7 +45,7 @@ Roadmap
 * Implement ``class`` identifier parser (completed in 0.0.3).
 
 Installation
-~~~~~~~~~~~~
+============
 
 Install chcss with::
 
@@ -69,7 +70,7 @@ appropriate configuration file.  Optimally, run ``chcss`` from
 ``pre-commit`` to check HTML files as necessary.
 
 Usage
-~~~~~
+=====
 
 Console::
 
@@ -84,7 +85,7 @@ See the source and `documentation
 <https://chcss.readthedocs.io/en/latest/>`_ for more information.
 
 Configuration
-~~~~~~~~~~~~~
+=============
 
 See ``chcss.toml`` for an example ``[tool.chcss]`` section that may be
 copied into a ``pyproject.toml`` file.  The same entries may be used
@@ -92,14 +93,14 @@ in a ``chcss`` entry in ``package.json`` for JavaScript/TypeScript
 projects.
 
 Parsing Grammar
-~~~~~~~~~~~~~~~
+===============
 
 Basic Specification::
 
   namespace-function((-component)+(-element(-modifier)*)?)?
 
 Copyright and License
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 SPDX-License-Identifier: `GPL-3.0-or-later
 <https://spdx.org/licenses/GPL-3.0-or-later.html>`_
@@ -123,6 +124,6 @@ You should have received a copy of the `GNU General Public License
 If not, see https://www.gnu.org/licenses/.
 
 Author
-~~~~~~
+======
 
 `Jeremy A Gray <jeremy.a.gray@gmail.com>`_
