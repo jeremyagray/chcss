@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath(".."))
 author = "Jeremy A Gray"
 copyright = "2021-2024, Jeremy A Gray"
 project = "chcss"
-release = "0.0.3"
+release = "0.0.4"
 
 extensions = [
     "sphinx.ext.autodoc",

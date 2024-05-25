@@ -127,7 +127,7 @@ authors = [
 ]
 description = "chcss, a CSS naming hierarchy enforcer"
 name = "chcss"
-version = "0.0.3"
+version = "0.0.4"
 license = "GPL-3.0-or-later"
 maintainers = [
   "Jeremy A Gray <gray@flyquackswim.com>",
